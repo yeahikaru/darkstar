@@ -1,0 +1,10 @@
+<config>
+    <option>
+        <name>Enable_COP</name>
+        <desc>Enables Chains of Promathia content</desc>
+    </option>
+    <option>
+        <name>Enable_ROV</name>
+        <desc>Enables Rhapsodies of Vana'diel content</desc>
+    </option>
+</config>

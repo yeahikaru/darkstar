@@ -234,6 +234,7 @@
     <ClInclude Include="..\..\src\map\alliance.h" />
     <ClInclude Include="..\..\src\map\blue_spell.h" />
     <ClInclude Include="..\..\src\map\blue_trait.h" />
+    <ClInclude Include="..\..\src\map\config.h" />
     <ClInclude Include="..\..\src\map\guild.h" />
     <ClInclude Include="..\..\src\map\message.h" />
     <ClInclude Include="..\..\src\map\commandhandler.h" />
@@ -672,6 +673,17 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\xml\config.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(MSBuildProjectDirectory)\..\..\win32\external\xalan\Xalan.exe -m -o ..\..\src\map\config.h ..\..\xml\config.xml ..\..\xml\stylesheets\c.xslt
+$(MSBuildProjectDirectory)\..\..\win32\external\xalan\Xalan.exe -m -o ..\..\scripts\globals\config.lua ..\..\xml\config.xml ..\..\xml\stylesheets\lua.xslt</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(MSBuildProjectDirectory)\..\..\src\map\config.h;$(MSBuildProjectDirectory)\..\..\scripts\globals\config.lua</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(MSBuildProjectDirectory)\..\..\xml\stylesheets\c.xslt;$(MSBuildProjectDirectory)\..\..\xml\stylesheets\lua.xslt</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate Configuration</Message>
+    </CustomBuild>
+    <Xml Include="..\..\xml\stylesheets\c.xslt" />
+    <Xml Include="..\..\xml\stylesheets\lua.xslt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

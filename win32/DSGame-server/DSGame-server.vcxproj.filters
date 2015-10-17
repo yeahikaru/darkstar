@@ -81,6 +81,12 @@
     <Filter Include="Header Files\common\marshal">
       <UniqueIdentifier>{e12005cb-3c26-42a1-9752-8898f7492816}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\xml">
+      <UniqueIdentifier>{9f4cbd74-86b7-4729-a52f-69b6e5c5a917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\xml\stylesheets">
+      <UniqueIdentifier>{646c7bca-7a31-4375-8123-ada69fc7431f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\map\ability.h">
@@ -839,6 +845,9 @@
     <ClInclude Include="..\..\src\map\packets\party_effects.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\map\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\map\ability.cpp">
@@ -1557,5 +1566,18 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\xml\stylesheets\c.xslt">
+      <Filter>Resource Files\xml\stylesheets</Filter>
+    </Xml>
+    <Xml Include="..\..\xml\stylesheets\lua.xslt">
+      <Filter>Resource Files\xml\stylesheets</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\xml\config.xml">
+      <Filter>Resource Files\xml</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>
