@@ -38,7 +38,7 @@ function onGameIn(player, firstlogin, zoning)
         player:addStatusEffect(dsp.effect.MIGHTY_STRIKES,1,0,0);
         player:addStatusEffect(dsp.effect.HUNDRED_FISTS,1,0,0);
         player:addStatusEffect(dsp.effect.CHAINSPELL,1,0,0);
-        player:addStatusEffect(dsp.effect.PERFECT_DODGE,1,0,0);
+--Disable PERFECT_DODGE        player:addStatusEffect(dsp.effect.PERFECT_DODGE,1,0,0);
         player:addStatusEffect(dsp.effect.INVINCIBLE,1,0,0);
         player:addStatusEffect(dsp.effect.ELEMENTAL_SFORZO,1,0,0);
         player:addStatusEffect(dsp.effect.MANAFONT,1,0,0);

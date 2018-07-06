@@ -20,7 +20,7 @@ function onTrigger(player)
         player:addStatusEffect(dsp.effect.MIGHTY_STRIKES,1,0,0);
         player:addStatusEffect(dsp.effect.HUNDRED_FISTS,1,0,0);
         player:addStatusEffect(dsp.effect.CHAINSPELL,1,0,0);
-        player:addStatusEffect(dsp.effect.PERFECT_DODGE,1,0,0);
+--Disable PERFECT_DODGE        player:addStatusEffect(dsp.effect.PERFECT_DODGE,1,0,0);
         player:addStatusEffect(dsp.effect.INVINCIBLE,1,0,0);
         player:addStatusEffect(dsp.effect.ELEMENTAL_SFORZO,1,0,0);
         player:addStatusEffect(dsp.effect.MANAFONT,1,0,0);
@@ -52,7 +52,7 @@ function onTrigger(player)
         player:delStatusEffect(dsp.effect.MIGHTY_STRIKES);
         player:delStatusEffect(dsp.effect.HUNDRED_FISTS);
         player:delStatusEffect(dsp.effect.CHAINSPELL);
-        player:delStatusEffect(dsp.effect.PERFECT_DODGE);
+--Disable PERFECT_DODGE        player:delStatusEffect(dsp.effect.PERFECT_DODGE);
         player:delStatusEffect(dsp.effect.INVINCIBLE);
         player:delStatusEffect(dsp.effect.ELEMENTAL_SFORZO);
         player:delStatusEffect(dsp.effect.MANAFONT);
