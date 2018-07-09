@@ -7,7 +7,7 @@ require("scripts/globals/missions");
 
 cmdprops =
 {
-    permission = 4,
+    permission = 0,
     parameters = "ss"
 };
 
