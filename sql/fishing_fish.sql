@@ -115,6 +115,7 @@ INSERT INTO `fishing_fish` VALUES (4501,'Fat Greedie',0,24,0,0,1,255,255);
 INSERT INTO `fishing_fish` VALUES (4514,'Quus',0,19,0,0,1,255,255);
 INSERT INTO `fishing_fish` VALUES (4515,'Copper Frog',0,16,0,0,0,255,255);
 INSERT INTO `fishing_fish` VALUES (4528,'Crystal Bass',0,35,0,0,0,255,255);
+INSERT INTO `fishing_fish` VALUES (4562, 'Odontotyrannus', 0, 0, 0, 0, 0, 0, 91); -- A Boy's Dream (PLD AF2)
 INSERT INTO `fishing_fish` VALUES (4579,'Elshimo Newt',0,60,0,0,0,255,255);
 INSERT INTO `fishing_fish` VALUES (4580,'Coral Butterfly',0,40,0,0,0,255,255);
 INSERT INTO `fishing_fish` VALUES (5120,'Titanic Sawfish',90,100,0,1,0,255,255);
