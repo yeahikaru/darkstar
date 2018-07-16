@@ -18,6 +18,7 @@ require("scripts/globals/gear_sets");
 -----------------------------------
 
 function onGameIn(player, firstlogin, zoning)
+	local lvl = player:getMainLvl()
     if (not zoning) then -- Things checked ONLY during logon go here.
         if (firstlogin) then
             CharCreate(player);
@@ -35,33 +36,17 @@ function onGameIn(player, firstlogin, zoning)
 	print("lvl = %u", player:getMainLvl())
 	player:addStatusEffect(dsp.effect.PROTECT,1000,0,0);
 	player:addStatusEffect(dsp.effect.SHELL,1000,0,0);
-	player:addStatusEffect(dsp.effect.HASTE,9000,0,0);
-	player:addStatusEffect(dsp.effect.HASTE_DAZE,9000,0,0);
-	player:addStatusEffect(dsp.effect.HASTE_SAMBA,9000,0,0);
+	player:addStatusEffect(dsp.effect.HASTE,1,0,0);
+	player:addStatusEffect(dsp.effect.HASTE_DAZE,1,0,0);
+	player:addStatusEffect(dsp.effect.HASTE_SAMBA,1,0,0);
 	player:addStatusEffect(dsp.effect.REGAIN,300,0,0);
 	player:addStatusEffect(dsp.effect.REFRESH,500,0,0);
 	player:addStatusEffect(dsp.effect.REGEN,500,0,0);
 	player:addStatusEffect(dsp.effect.RERAISE,3,0,0);
 	player:addStatusEffect(dsp.effect.FLEE,100,0,0);
-	player:addStatusEffect(dsp.effect.ACCURACY_BOOST,100,0,0);
-	player:addStatusEffect(dsp.effect.ATTACK_BOOST,100,0,0);
-	
-	if (player:getMainLvl() < 10) then
-		player:addStatusEffect(dsp.effect.ICE_SPIKES,10,0,0);
-	elseif (player:getMainLvl() < 20) then
-		player:addStatusEffect(dsp.effect.ICE_SPIKES,50,0,0);
-	elseif (player:getMainLvl() < 30) then
-		player:addStatusEffect(dsp.effect.ICE_SPIKES,100,0,0);		
-	elseif (player:getMainLvl() < 40) then
-		player:addStatusEffect(dsp.effect.ICE_SPIKES,300,0,0);		
-	elseif (player:getMainLvl() < 50) then
-		player:addStatusEffect(dsp.effect.ICE_SPIKES,500,0,0);		
-	elseif (player:getMainLvl() < 60) then
-		player:addStatusEffect(dsp.effect.ICE_SPIKES,700,0,0);
-	elseif (player:getMainLvl() < 70) then
-		player:addStatusEffect(dsp.effect.ICE_SPIKES,1000,0,0);
-	end
-		
+	player:addStatusEffect(dsp.effect.ACCURACY_BOOST,1000,0,0);
+	player:addStatusEffect(dsp.effect.ATTACK_BOOST,500,0,0);	
+	player:addStatusEffect(dsp.effect.ICE_SPIKES,lvl*10,0,0);
 		
     if (player:getVar("GodMode") == 1) then
         -- Add bonus effects to the player..

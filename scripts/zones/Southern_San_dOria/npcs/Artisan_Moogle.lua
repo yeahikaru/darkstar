@@ -1,6 +1,37 @@
+package.loaded["scripts/zones/Southern_San_dOria/TextIDs"] = nil;
 -----------------------------------
+require("scripts/globals/settings");
 require("scripts/zones/Southern_San_dOria/TextIDs")
+require("scripts/globals/shop");
 -----------------------------------
+function onTrigger(player, page)
+	player:showText(npc,SHILAH_SHOP_DIALOG);
+	local stock = 
+	{
+		SHARD_OF_NECROPOSYCHE, 			50000,
+		RANPERRE_GOLDPIECE,				50000,
+		RIMILALA_STRIPESHELL,			50000,
+		MYSTIC_FRAGMENT, 				10000,
+		ORNATE_FRAGMENT,				10000,
+		HOLY_FRAGMENT,					10000,
+		INTRICATE_FRAGMENT,				10000,
+		RUNAEIC_FRAGMENT,				10000,
+		SERAPHIC_FRAGMENT,				10000,
+		TENEBROUS_FRAGMENT,				10000,
+		STELLAR_FRAGMENT,				10000,
+		DEMONIAC_FRAGMENT,				10000,
+		DIVINE_FRAGMENT,				10000,
+		HEAVENLY_FRAGMENT,				10000,
+		CELESTIAL_FRAGMENT,				10000,
+		SNARIED_FRAGMENT,				10000,
+		ETHEREAL_FRAGMENT,				10000,
+		MYSTERIAL_FRAGMENT,				10000,
+		SUPERNAL_FRAGMENT,				10000,
+		
+		
+	};
+	dsp.shop.general(player, stock);
+end
 
 function onTrade(player,npc,trade)
     count = trade:getItemCount();
@@ -29,7 +60,7 @@ function onTrade(player,npc,trade)
 		--Mandau
 		if (MainJob == THF) then
 			if (OneByneBill == true and count == 100) then
-				player:messageSpecial(ITEM_OBTAINED, ORNATE_FRAGMENT);
+				player:messageSpecial(ITEM_OBTAINED, ORNATE_FRAGMENT);	
 				player:messageSpecial(ITEM_OBTAINED, SHARD_OF_NECROPOSYCHE);
 				player:addItem(ORNATE_FRAGMENT, 1);
 				player:addItem(SHARD_OF_NECROPOSYCHE, 1);
@@ -262,12 +293,4 @@ function onTrade(player,npc,trade)
 	
 	if (MainLvl == 99) then
 	end	
-end;
-
-function onTrigger(player, npc)
-	if (player:getMainJob() == MNK) then
-		printf("Get Job Success.");
-	else
-		printf("Get Job Fail");
-	end
 end;
