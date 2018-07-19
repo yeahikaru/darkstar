@@ -9,6 +9,7 @@ function onTrigger(player, npc)
 			player:unlockJob(dsp.job.RUN);
 			player:PrintToPlayer("You got a new job Rune Fencer!");
 			player:delKeyItem(dsp.ki.YAHSE_WILDFLOWER_PETAL);
+			player:completeQuest(ADOULIN, CHILDREN_OF_THE_RUNE);
 		end
 	end
 end
