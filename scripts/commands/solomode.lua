@@ -28,6 +28,8 @@ function onTrigger(player)
 		player:addStatusEffect(dsp.effect.ACCURACY_BOOST,1000,0,0);
 		player:addStatusEffect(dsp.effect.ATTACK_BOOST,500,0,0);		
 		player:addStatusEffect(dsp.effect.ICE_SPIKES,lvl*10,0,0);
+		player:addStatusEffect(dsp.effect.BLITZERS_ROLL, 1,0,0);
+		--player:addStatusEffect(dsp.effect.VICTORY_MARCH,1,0,0);
 
     else
         -- Toggle GodMode off..
@@ -46,6 +48,7 @@ function onTrigger(player)
 		player:delStatusEffect(dsp.effect.ACCURACY_BOOST);
 		player:delStatusEffect(dsp.effect.ATTACK_BOOST);
 		player:delStatusEffect(dsp.effect.ICE_SPIKES);
-
+		player:delStatusEffect(dsp.effect.BLITZERS_ROLL);
+		--player:delStatusEffect(dsp.effect.VICTORY_MARCH);
     end
 end

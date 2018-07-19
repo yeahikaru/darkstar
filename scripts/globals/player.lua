@@ -47,6 +47,8 @@ function onGameIn(player, firstlogin, zoning)
 	player:addStatusEffect(dsp.effect.ACCURACY_BOOST,1000,0,0);
 	player:addStatusEffect(dsp.effect.ATTACK_BOOST,500,0,0);	
 	player:addStatusEffect(dsp.effect.ICE_SPIKES,lvl*10,0,0);
+	player:addStatusEffect(dsp.effect.BLITZERS_ROLL, 1,0,0);
+	--player:addStatusEffect(dsp.effect.VICTORY_MARCH,1,0,0);
 		
     if (player:getVar("GodMode") == 1) then
         -- Add bonus effects to the player..
