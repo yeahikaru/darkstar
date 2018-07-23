@@ -33,7 +33,6 @@ function onGameIn(player, firstlogin, zoning)
     checkForGearSet(player);
 	
 	
-	print("lvl = %u", player:getMainLvl())
 	player:addStatusEffect(dsp.effect.PROTECT,1000,0,0);
 	player:addStatusEffect(dsp.effect.SHELL,1000,0,0);
 	player:addStatusEffect(dsp.effect.HASTE,1,0,0);
@@ -48,8 +47,9 @@ function onGameIn(player, firstlogin, zoning)
 	player:addStatusEffect(dsp.effect.ATTACK_BOOST,500,0,0);	
 	player:addStatusEffect(dsp.effect.ICE_SPIKES,lvl*10,0,0);
 	player:addStatusEffect(dsp.effect.BLITZERS_ROLL, 1,0,0);
-	--player:addStatusEffect(dsp.effect.VICTORY_MARCH,1,0,0);
-		
+
+	player:addMod(dsp.mod.TA_TRIPLE_DAMAGE, 1000);
+	
     if (player:getVar("GodMode") == 1) then
         -- Add bonus effects to the player..
         player:addStatusEffect(dsp.effect.MAX_HP_BOOST,1000,0,0);
