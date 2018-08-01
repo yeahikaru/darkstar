@@ -110,7 +110,6 @@ INSERT INTO `fishing_rod` VALUES (17011,'Ebisu Fishing Rod',4501,5);
 INSERT INTO `fishing_rod` VALUES (17011,'Ebisu Fishing Rod',4514,5);
 INSERT INTO `fishing_rod` VALUES (17011,'Ebisu Fishing Rod',4515,5);
 INSERT INTO `fishing_rod` VALUES (17011,'Ebisu Fishing Rod',4528,5);
-INSERT INTO `fishing_rod` VALUES (17011,'Ebisu Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17011,'Ebisu Fishing Rod',4579,3);
 INSERT INTO `fishing_rod` VALUES (17011,'Ebisu Fishing Rod',4580,3);
 INSERT INTO `fishing_rod` VALUES (17011,'Ebisu Fishing Rod',5120,5);
@@ -203,7 +202,6 @@ INSERT INTO `fishing_rod` VALUES (17014,'Hume Fishing Rod',4501,5);
 INSERT INTO `fishing_rod` VALUES (17014,'Hume Fishing Rod',4514,5);
 INSERT INTO `fishing_rod` VALUES (17014,'Hume Fishing Rod',4515,5);
 INSERT INTO `fishing_rod` VALUES (17014,'Hume Fishing Rod',4528,5);
-INSERT INTO `fishing_rod` VALUES (17014,'Hume Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17014,'Hume Fishing Rod',4580,3);
 INSERT INTO `fishing_rod` VALUES (17014,'Hume Fishing Rod',5126,5);
 INSERT INTO `fishing_rod` VALUES (17014,'Hume Fishing Rod',5128,1);
@@ -269,7 +267,6 @@ INSERT INTO `fishing_rod` VALUES (17015,'Halcyon Fishing Rod',4501,1);
 INSERT INTO `fishing_rod` VALUES (17015,'Halcyon Fishing Rod',4514,1);
 INSERT INTO `fishing_rod` VALUES (17015,'Halcyon Fishing Rod',4515,1);
 INSERT INTO `fishing_rod` VALUES (17015,'Halcyon Fishing Rod',4528,1);
-INSERT INTO `fishing_rod` VALUES (17015,'Halcyon Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17015,'Halcyon Fishing Rod',4580,1);
 INSERT INTO `fishing_rod` VALUES (17015,'Halcyon Fishing Rod',5126,5);
 INSERT INTO `fishing_rod` VALUES (17015,'Halcyon Fishing Rod',5128,1);
@@ -355,7 +352,6 @@ INSERT INTO `fishing_rod` VALUES (17380,'Mithran Fishing Rod',4501,1);
 INSERT INTO `fishing_rod` VALUES (17380,'Mithran Fishing Rod',4514,1);
 INSERT INTO `fishing_rod` VALUES (17380,'Mithran Fishing Rod',4515,1);
 INSERT INTO `fishing_rod` VALUES (17380,'Mithran Fishing Rod',4528,1);
-INSERT INTO `fishing_rod` VALUES (17380,'Mithran Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17380,'Mithran Fishing Rod',4579,5);
 INSERT INTO `fishing_rod` VALUES (17380,'Mithran Fishing Rod',4580,5);
 INSERT INTO `fishing_rod` VALUES (17380,'Mithran Fishing Rod',5128,1);
@@ -436,7 +432,6 @@ INSERT INTO `fishing_rod` VALUES (17381,'Composite Fishing Rod',4500,1);
 INSERT INTO `fishing_rod` VALUES (17381,'Composite Fishing Rod',4501,1);
 INSERT INTO `fishing_rod` VALUES (17381,'Composite Fishing Rod',4514,8);
 INSERT INTO `fishing_rod` VALUES (17381,'Composite Fishing Rod',4528,1);
-INSERT INTO `fishing_rod` VALUES (17381,'Composite Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17381,'Composite Fishing Rod',4579,9);
 INSERT INTO `fishing_rod` VALUES (17381,'Composite Fishing Rod',4580,9);
 INSERT INTO `fishing_rod` VALUES (17381,'Composite Fishing Rod',5121,1);
@@ -481,7 +476,6 @@ INSERT INTO `fishing_rod` VALUES (17382,'Single Hook Fishing Rod',4479,5);
 INSERT INTO `fishing_rod` VALUES (17382,'Single Hook Fishing Rod',4480,1);
 INSERT INTO `fishing_rod` VALUES (17382,'Single Hook Fishing Rod',4514,1);
 INSERT INTO `fishing_rod` VALUES (17382,'Single Hook Fishing Rod',4515,1);
-INSERT INTO `fishing_rod` VALUES (17382,'Single Hook Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17382,'Single Hook Fishing Rod',5448,8);
 INSERT INTO `fishing_rod` VALUES (17382,'Single Hook Fishing Rod',12522,1);
 INSERT INTO `fishing_rod` VALUES (17382,'Single Hook Fishing Rod',13454,1);
@@ -505,7 +499,6 @@ INSERT INTO `fishing_rod` VALUES (17383,'Clothespole',4472,1);
 INSERT INTO `fishing_rod` VALUES (17383,'Clothespole',4477,4);
 INSERT INTO `fishing_rod` VALUES (17383,'Clothespole',4480,7);
 INSERT INTO `fishing_rod` VALUES (17383,'Clothespole',4515,1);
-INSERT INTO `fishing_rod` VALUES (17383,'Clothespole',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17383,'Clothespole',12522,1);
 INSERT INTO `fishing_rod` VALUES (17383,'Clothespole',13454,1);
 INSERT INTO `fishing_rod` VALUES (17383,'Clothespole',14117,1);
@@ -553,7 +546,6 @@ INSERT INTO `fishing_rod` VALUES (17384,'Carbon Fishing Rod',4501,5);
 INSERT INTO `fishing_rod` VALUES (17384,'Carbon Fishing Rod',4514,5);
 INSERT INTO `fishing_rod` VALUES (17384,'Carbon Fishing Rod',4515,5);
 INSERT INTO `fishing_rod` VALUES (17384,'Carbon Fishing Rod',4528,5);
-INSERT INTO `fishing_rod` VALUES (17384,'Carbon Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17384,'Carbon Fishing Rod',4580,5);
 INSERT INTO `fishing_rod` VALUES (17384,'Carbon Fishing Rod',5126,5);
 INSERT INTO `fishing_rod` VALUES (17384,'Carbon Fishing Rod',5130,1);
@@ -590,7 +582,6 @@ INSERT INTO `fishing_rod` VALUES (17385,'Glass Fiber Fishing Rod',4501,1);
 INSERT INTO `fishing_rod` VALUES (17385,'Glass Fiber Fishing Rod',4514,5);
 INSERT INTO `fishing_rod` VALUES (17385,'Glass Fiber Fishing Rod',4515,5);
 INSERT INTO `fishing_rod` VALUES (17385,'Glass Fiber Fishing Rod',4528,5);
-INSERT INTO `fishing_rod` VALUES (17385,'Glass Fiber Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17385,'Glass Fiber Fishing Rod',5449,1);
 INSERT INTO `fishing_rod` VALUES (17385,'Glass Fiber Fishing Rod',12522,5);
 INSERT INTO `fishing_rod` VALUES (17385,'Glass Fiber Fishing Rod',13454,1);
@@ -667,7 +658,6 @@ INSERT INTO `fishing_rod` VALUES (17386,'Lu Shang\'s Fishing Rod',4501,5);
 INSERT INTO `fishing_rod` VALUES (17386,'Lu Shang\'s Fishing Rod',4514,5);
 INSERT INTO `fishing_rod` VALUES (17386,'Lu Shang\'s Fishing Rod',4515,5);
 INSERT INTO `fishing_rod` VALUES (17386,'Lu Shang\'s Fishing Rod',4528,5);
-INSERT INTO `fishing_rod` VALUES (17386,'Lu Shang\'s Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17386,'Lu Shang\'s Fishing Rod',4579,3);
 INSERT INTO `fishing_rod` VALUES (17386,'Lu Shang\'s Fishing Rod',4580,3);
 INSERT INTO `fishing_rod` VALUES (17386,'Lu Shang\'s Fishing Rod',5120,5);
@@ -751,7 +741,6 @@ INSERT INTO `fishing_rod` VALUES (17387,'Tarutaru Fishing Rod',4500,5);
 INSERT INTO `fishing_rod` VALUES (17387,'Tarutaru Fishing Rod',4514,5);
 INSERT INTO `fishing_rod` VALUES (17387,'Tarutaru Fishing Rod',4515,5);
 INSERT INTO `fishing_rod` VALUES (17387,'Tarutaru Fishing Rod',4528,5);
-INSERT INTO `fishing_rod` VALUES (17387,'Tarutaru Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17387,'Tarutaru Fishing Rod',12522,1);
 INSERT INTO `fishing_rod` VALUES (17387,'Tarutaru Fishing Rod',13454,1);
 INSERT INTO `fishing_rod` VALUES (17387,'Tarutaru Fishing Rod',14117,1);
@@ -776,7 +765,6 @@ INSERT INTO `fishing_rod` VALUES (17388,'Fastwater Fishing Rod',4482,5);
 INSERT INTO `fishing_rod` VALUES (17388,'Fastwater Fishing Rod',4483,5);
 INSERT INTO `fishing_rod` VALUES (17388,'Fastwater Fishing Rod',4514,5);
 INSERT INTO `fishing_rod` VALUES (17388,'Fastwater Fishing Rod',4515,5);
-INSERT INTO `fishing_rod` VALUES (17388,'Fastwater Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17388,'Fastwater Fishing Rod',12522,5);
 INSERT INTO `fishing_rod` VALUES (17388,'Fastwater Fishing Rod',13454,1);
 INSERT INTO `fishing_rod` VALUES (17388,'Fastwater Fishing Rod',14117,1);
@@ -796,7 +784,6 @@ INSERT INTO `fishing_rod` VALUES (17389,'Bamboo Fishing Rod',4500,5);
 INSERT INTO `fishing_rod` VALUES (17389,'Bamboo Fishing Rod',4501,5);
 INSERT INTO `fishing_rod` VALUES (17389,'Bamboo Fishing Rod',4514,5);
 INSERT INTO `fishing_rod` VALUES (17389,'Bamboo Fishing Rod',4515,5);
-INSERT INTO `fishing_rod` VALUES (17389,'Bamboo Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17389,'Bamboo Fishing Rod',12522,1);
 INSERT INTO `fishing_rod` VALUES (17389,'Bamboo Fishing Rod',13454,1);
 INSERT INTO `fishing_rod` VALUES (17389,'Bamboo Fishing Rod',14117,1);
@@ -810,7 +797,6 @@ INSERT INTO `fishing_rod` VALUES (17390,'Yew Fishing Rod',4461,4);
 INSERT INTO `fishing_rod` VALUES (17390,'Yew Fishing Rod',4472,5);
 INSERT INTO `fishing_rod` VALUES (17390,'Yew Fishing Rod',4474,13);
 INSERT INTO `fishing_rod` VALUES (17390,'Yew Fishing Rod',4515,5);
-INSERT INTO `fishing_rod` VALUES (17390,'Yew Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17390,'Yew Fishing Rod',13454,1);
 INSERT INTO `fishing_rod` VALUES (17390,'Yew Fishing Rod',14117,1);
 INSERT INTO `fishing_rod` VALUES (17391,'Willow Fishing Rod',90,5);
@@ -824,7 +810,6 @@ INSERT INTO `fishing_rod` VALUES (17391,'Willow Fishing Rod',4461,4);
 INSERT INTO `fishing_rod` VALUES (17391,'Willow Fishing Rod',4472,5);
 INSERT INTO `fishing_rod` VALUES (17391,'Willow Fishing Rod',4514,5);
 INSERT INTO `fishing_rod` VALUES (17391,'Willow Fishing Rod',4515,5);
-INSERT INTO `fishing_rod` VALUES (17391,'Willow Fishing Rod',4562,1); -- odontotyrannus (PLD AF2)
 INSERT INTO `fishing_rod` VALUES (17391,'Willow Fishing Rod',13454,1);
 INSERT INTO `fishing_rod` VALUES (17391,'Willow Fishing Rod',14117,1);
 /*!40000 ALTER TABLE `fishing_rod` ENABLE KEYS */;
