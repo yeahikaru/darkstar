@@ -468,7 +468,7 @@ void CDataLoader::ExpireAHItems()
         search_config.mysql_database.c_str());
 
     std::string qStr = "SELECT T0.id,T0.itemid,T1.stacksize, T0.stack, T0.seller FROM auction_house T0 INNER JOIN item_basic T1 ON \
-                            T0.itemid = T1.itemid WHERE datediff(now(),from_unixtime(date)) >=%u AND buyer_name IS NULL;";
+                            T0.itemid = T1.itemid WHERE datediff(now(),from_unixtime(date)) >=%u AND buyer_name IS NULL AND T0.seller != 0;";
     int32 ret = Sql_Query(SqlHandle, qStr.c_str(), search_config.expire_days);
     int64 expiredAuctions = Sql_NumRows(SqlHandle);
     if (ret != SQL_ERROR && Sql_NumRows(SqlHandle) != 0)
