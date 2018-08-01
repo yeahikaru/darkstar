@@ -35,7 +35,7 @@ CDataLoader::CDataLoader()
 {
     SqlHandle = Sql_Malloc();
 
-    //	ShowStatus("sqlhandle is allocating\n");
+    //  ShowStatus("sqlhandle is allocating\n");
     if (Sql_Connect(SqlHandle, search_config.mysql_login.c_str(),
         search_config.mysql_password.c_str(),
         search_config.mysql_host.c_str(),
