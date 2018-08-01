@@ -19,6 +19,8 @@ require("scripts/globals/gear_sets");
 
 function onGameIn(player, firstlogin, zoning)
 	local lvl = player:getMainLvl()
+	local dynaStatus = player:hasStatusEffect(dsp.effect.DYNAMIS)
+	
     if (not zoning) then -- Things checked ONLY during logon go here.
         if (firstlogin) then
             CharCreate(player);
@@ -27,6 +29,25 @@ function onGameIn(player, firstlogin, zoning)
 
     if (zoning) then -- Things checked ONLY during zone in go here.
         -- Nothing here yet :P
+		if (dynaStatus) then
+			printf("player has dynamis status.")
+			player:addStatusEffect(dsp.effect.MAX_HP_BOOST,1000,0,0);
+			player:addStatusEffect(dsp.effect.MAX_MP_BOOST,1000,0,0);			
+			-- Add bonus mods to the player..
+			player:addMod(dsp.mod.RACC,2500);
+			player:addMod(dsp.mod.RATT,2500);
+			player:addMod(dsp.mod.ACC,2500);
+			player:addMod(dsp.mod.ATT,2500);
+			player:addMod(dsp.mod.MATT,2500);
+			player:addMod(dsp.mod.MACC,2500);
+			player:addMod(dsp.mod.RDEF,2500);
+			player:addMod(dsp.mod.DEF,2500);
+			player:addMod(dsp.mod.MDEF,2500);
+
+			-- Heal the player from the new buffs..
+			player:addHP( 50000 );
+			player:setMP( 50000 );
+		end		
     end
 
     -- Things checked BOTH during logon AND zone in below this line.
@@ -35,9 +56,9 @@ function onGameIn(player, firstlogin, zoning)
 	
 	player:addStatusEffect(dsp.effect.PROTECT,1000,0,0);
 	player:addStatusEffect(dsp.effect.SHELL,1000,0,0);
-	player:addStatusEffect(dsp.effect.HASTE,1,0,0);
-	player:addStatusEffect(dsp.effect.HASTE_DAZE,1,0,0);
-	player:addStatusEffect(dsp.effect.HASTE_SAMBA,1,0,0);
+	player:addStatusEffect(dsp.effect.HASTE_II,100,0,0);
+	player:addStatusEffect(dsp.effect.HASTE_DAZE,100,0,0);
+	player:addStatusEffect(dsp.effect.HASTE_SAMBA,100,0,0);
 	player:addStatusEffect(dsp.effect.REGAIN,300,0,0);
 	player:addStatusEffect(dsp.effect.REFRESH,500,0,0);
 	player:addStatusEffect(dsp.effect.REGEN,500,0,0);
@@ -45,10 +66,10 @@ function onGameIn(player, firstlogin, zoning)
 	player:addStatusEffect(dsp.effect.FLEE,100,0,0);
 	player:addStatusEffect(dsp.effect.ACCURACY_BOOST,1000,0,0);
 	player:addStatusEffect(dsp.effect.ATTACK_BOOST,500,0,0);	
-	player:addStatusEffect(dsp.effect.ICE_SPIKES,lvl*10,0,0);
-	player:addStatusEffect(dsp.effect.BLITZERS_ROLL, 1,0,0);
+	player:addStatusEffect(dsp.effect.ICE_SPIKES,lvl*5,0,0);
+	player:addStatusEffect(dsp.effect.BLITZERS_ROLL, 100,0,0);
 
-	player:addMod(dsp.mod.TA_TRIPLE_DAMAGE, 1000);
+	--player:addMod(dsp.mod.TA_TRIPLE_DAMAGE, 1000);
 	
     if (player:getVar("GodMode") == 1) then
         -- Add bonus effects to the player..
