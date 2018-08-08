@@ -10,3 +10,8 @@ NOTHING_OUT_OF_ORDINARY = 6401; -- There is nothing out of the ordinary here.
 
 -- conquest Base
           CONQUEST_BASE = 7154; -- Tallying conquest results...
+
+--Dynamis item ID
+STEELWALL_BIJOU = 3354;
+--Dynamis mobs ID
+GUDHA_EFFIGY = 17539073;				  

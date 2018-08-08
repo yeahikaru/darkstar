@@ -8,3 +8,8 @@ ITEM_CANNOT_BE_OBTAINED = 6381; -- You cannot obtain the item <item> come back a
 
 -- conquest Base
           CONQUEST_BASE = 7054; -- Tallying conquest results...
+
+--Dynamis item ID
+ROVING_BIJOU = 3356;
+--Dynamis mobs ID
+GOBLIN_GOLEM = 17547265;			  

@@ -10,3 +10,9 @@ NOTHING_OUT_OF_ORDINARY = 6401; -- There is nothing out of the ordinary here.
 
 -- conquest Base
           CONQUEST_BASE = 7054; -- Tallying conquest results...
+		  
+--Dynamis item ID
+BARBARIC_BIJOU = 3353;
+--Dynamis mobs ID
+OVERLORD_TOMBSTONE = 17534977;
+		  
