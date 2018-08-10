@@ -8,7 +8,7 @@ function onTrigger(player, page)
 	player:showText(npc,SHILAH_SHOP_DIALOG);
 	local stock = 
 	{
-		SHARD_OF_NECROPOSYCHE, 			50000,
+		SHARD_OF_NECROPSYCHE, 			50000,
 		RANPERRE_GOLDPIECE,				50000,
 		RIMILALA_STRIPESHELL,			50000,
 		MYSTIC_FRAGMENT, 				10000,
