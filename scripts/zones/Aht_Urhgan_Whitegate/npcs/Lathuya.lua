@@ -58,19 +58,19 @@ function onEventUpdate(player,csid,option)
 end;
 
 function onEventFinish(player,csid,option)
-    if (csid == 770) then
-        if (player:hasItem(15600) == false or player:hasItem(14928) == false or player:hasItem(14521)) then
+        if (player:hasItem(15600) == false or player:hasItem(14928) == false or player:hasItem(14521) == false) then
             if (player:getMainJob() == dsp.job.BLU and player:getMainLvl() >= 50) then
                 if (player:getQuestStatus(AHT_URHGAN, TRANSFORMATIONS) == QUEST_ACCEPTED) then
                     player:PrintToPlayer("Trade the item for BLU's AF");
                 end
-            else
-                if (player:getQuestStatus(AHT_URHGAN, TRANSFORMATIONS) ~= QUEST_COMPLETED and player:getQuestStatus(AHT_URHGAN, TRANSFORMATIONS) == QUEST_ACCEPTED) then
-                    player:completeQuest(AHT_URHGAN, TRANSFORMATIONS);
-                    player:PrintToPlayer("The quest Transormations is complete");
-                end
+            end
+        else
+            if (player:getQuestStatus(AHT_URHGAN, TRANSFORMATIONS) == QUEST_ACCEPTED) then
+                --player:completeQuest(AHT_URHGAN, TRANSFORMATIONS);
+                player:setVar("Transformations", 1);
+                player:PrintToPlayer("Kill Nepionic Soulflayer in Alzadaal Undersea Ruins");
+                --player:setPos(-526, -0.449, 646, 72);
             end
         end
-    end
 end;
 
