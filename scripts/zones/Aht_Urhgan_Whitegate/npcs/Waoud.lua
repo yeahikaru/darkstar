@@ -23,6 +23,18 @@ function onTrade(player,npc,trade)
     if (anEmptyVessel == QUEST_ACCEPTED and anEmptyVesselProgress == 3 and trade:hasItemQty(StoneID,1) and trade:getItemCount() == 1) then
         player:startEvent(67,StoneID); -- get the stone to Aydeewa
     end;
+
+    if (trade:hasItemQty(65535, 10000)) then
+        player:PrintToPlayer("The quest Omens is complete");
+        player:completeQuest(AHT_URHGAN, OMENS);
+        if (player:getFreeSlotsCount() > 0) then
+            player:addItem(15684, 1);
+            player:messageSpecial(ITEM_OBTAINED, 15684);
+            player:addQuest(AHT_URHGAN, TRANSFORMATIONS);
+        else
+            player:messageSpecial(ITEM_CANNOT_BE_OBTAINED, 15684);
+        end
+    end
 end;
 
 function onTrigger(player,npc)
@@ -73,7 +85,9 @@ function onTrigger(player,npc)
         else
             player:startEvent(706,player:getGil()); -- clue about the five staging points, costs you 1000 gil
         end;
-
+    elseif (beginnings == QUEST_COMPLETED and player:getMainJob() == dsp.job.BLU and player:getMainLvl() >= 50) then
+        player:PrintToPlayer("The quest Omens doesn't implement, please trade 10000 gil for complete Omens and obtain AF of BLU");
+        player:addQuest(AHT_URHGAN, OMENS);
     -- DEFAULT DIALOG
     else
         player:startEvent(61);
