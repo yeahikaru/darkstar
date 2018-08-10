@@ -24,7 +24,8 @@ function onTrigger(player,npc)
         player:addKeyItem(dsp.ki.HYDRA_CORPS_TACTICAL_MAP);
         player:messageSpecial(KEYITEM_OBTAINED,dsp.ki.HYDRA_CORPS_TACTICAL_MAP);	
 	end
-    if (player:hasKeyItem(dsp.ki.HYDRA_CORPS_TACTICAL_MAP) == false) then
+
+    if ((player:hasKeyItem(dsp.ki.HYDRA_CORPS_TACTICAL_MAP) == false) and (player:getVar("GoblinGolemIsDead", 1))) then
         player:setVar("DynaJeuno_Win",1);
         player:addKeyItem(dsp.ki.HYDRA_CORPS_TACTICAL_MAP);
         player:messageSpecial(KEYITEM_OBTAINED,dsp.ki.HYDRA_CORPS_TACTICAL_MAP);

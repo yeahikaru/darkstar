@@ -35,4 +35,6 @@ function onMobDeath(mob, player, isKiller)
         end
     end
 
+    player:setVar("OverlordTombstoneIsDead",1);
+
 end;

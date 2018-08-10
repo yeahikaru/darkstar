@@ -36,4 +36,5 @@ function onMobDeath(mob, player, isKiller)
         player:launchDynamisSecondPart(); -- Spawn dynamis second part
     end
 
+    player:setVar("TzeeXicuIdolIsDead",1);
 end;

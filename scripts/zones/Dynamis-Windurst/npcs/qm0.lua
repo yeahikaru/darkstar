@@ -25,7 +25,8 @@ function onTrigger(player,npc)
         player:addKeyItem(dsp.ki.HYDRA_CORPS_LANTERN);
         player:messageSpecial(KEYITEM_OBTAINED,dsp.ki.HYDRA_CORPS_LANTERN);	
 	end
-    if (player:hasKeyItem(dsp.ki.HYDRA_CORPS_LANTERN) == false) then
+
+    if ((player:hasKeyItem(dsp.ki.HYDRA_CORPS_LANTERN) == false) and (player:getVar("TzeeXicuIdolIsDead", 1))) then
         player:setVar("DynaWindurst_Win",1);
         player:addKeyItem(dsp.ki.HYDRA_CORPS_LANTERN);
         player:messageSpecial(KEYITEM_OBTAINED,dsp.ki.HYDRA_CORPS_LANTERN);

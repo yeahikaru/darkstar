@@ -25,7 +25,8 @@ function onTrigger(player,npc)
         player:addKeyItem(dsp.ki.HYDRA_CORPS_COMMAND_SCEPTER);
         player:messageSpecial(KEYITEM_OBTAINED,dsp.ki.HYDRA_CORPS_COMMAND_SCEPTER);	
 	end
-    if (player:hasKeyItem(dsp.ki.HYDRA_CORPS_COMMAND_SCEPTER) == false) then
+
+    if ((player:hasKeyItem(dsp.ki.HYDRA_CORPS_COMMAND_SCEPTER) == false) and (player:getVar("OverlordTombstoneIsDead", 1))) then
         player:setVar("DynaSandoria_Win",1);
         player:addKeyItem(dsp.ki.HYDRA_CORPS_COMMAND_SCEPTER);
         player:messageSpecial(KEYITEM_OBTAINED,dsp.ki.HYDRA_CORPS_COMMAND_SCEPTER);

@@ -25,7 +25,8 @@ function onTrigger(player,npc)
         player:addKeyItem(dsp.ki.HYDRA_CORPS_EYEGLASS);
         player:messageSpecial(KEYITEM_OBTAINED,dsp.ki.HYDRA_CORPS_EYEGLASS);	
 	end
-    if (player:hasKeyItem(dsp.ki.HYDRA_CORPS_EYEGLASS) == false) then
+
+    if ((player:hasKeyItem(dsp.ki.HYDRA_CORPS_EYEGLASS) == false) and (player:getVar("GudhaEffigyIsDead", 1))) then
         player:setVar("DynaBastok_Win",1);
         player:addKeyItem(dsp.ki.HYDRA_CORPS_EYEGLASS);
         player:messageSpecial(KEYITEM_OBTAINED,dsp.ki.HYDRA_CORPS_EYEGLASS);

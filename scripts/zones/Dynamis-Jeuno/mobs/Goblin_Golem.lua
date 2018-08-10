@@ -19,4 +19,5 @@ function onMobDeath(mob, player, isKiller)
 
     player:launchDynamisSecondPart(); -- Spawn dynamis second part
 
+    player:setVar("GoblinGolemIsDead",1);
 end;
