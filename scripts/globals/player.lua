@@ -20,7 +20,8 @@ require("scripts/globals/gear_sets");
 function onGameIn(player, firstlogin, zoning)
 	local lvl = player:getMainLvl()
 	local dynaStatus = player:hasStatusEffect(dsp.effect.DYNAMIS)
-	
+	local IsParty = player:checkSoloPartyAlliance();
+
     if (not zoning) then -- Things checked ONLY during logon go here.
         if (firstlogin) then
             CharCreate(player);
@@ -29,7 +30,7 @@ function onGameIn(player, firstlogin, zoning)
 
     if (zoning) then -- Things checked ONLY during zone in go here.
         -- Nothing here yet :P
-		if (dynaStatus) then
+		if (dynaStatus and IsParty == 0) then
 			printf("player has dynamis status.")
 			player:addStatusEffect(dsp.effect.MAX_HP_BOOST,1000,0,0);
 			player:addStatusEffect(dsp.effect.MAX_MP_BOOST,1000,0,0);			
